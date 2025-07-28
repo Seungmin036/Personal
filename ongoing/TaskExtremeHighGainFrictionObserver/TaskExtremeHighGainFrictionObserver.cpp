@@ -121,14 +121,9 @@ void TaskExtremeHighGainFrictionObserver<ROBOT>::compute(ROBOT &robot, const Lie
         robot.computeFK(tpos_, tvel_);
         robot.computeJacobian(tpos_, tvel_, J_, Jdot_);
 
-        ExtendedTaskJacobian JJtrans;
-        JJtrans.setZero();
-        JJtrans = J_*J_.transpose();
-        Eigen::ColPivHouseholderQR<ExtendedTaskJacobian> qr(JJtrans);
-
-        ExtendedTaskJacobian Jinv;
-        Jinv.setZero();
-        Jinv = J_.transpose()*qr.inverse();
+        ExtendedTaskJacobian Jtrans;
+        Jtrans.setZero();
+        Jtrans = J_.transpose();
 
         ExtendedTaskVec e, edot;
         e.setZero();
@@ -143,7 +138,7 @@ void TaskExtremeHighGainFrictionObserver<ROBOT>::compute(ROBOT &robot, const Lie
         robot.computeTaskErr(tpos_, tvel_, posDesired, velDesired, e, edot);
 
         JointVec tau_task;
-        tau_task = Kp_task_.cwiseProduct(Jinv*e) - Kd_.cwiseProduct(robot.qdot()) + gravity_compensation_torque;
+        tau_task = Jtrans * (Kp_task_.cwiseProduct(e) - Kd_task_.cwiseProduct(edot)) + gravity_compensation_torque;
         std::cout << "tau_task: " << tau_task.transpose() << std::endl;
         JointVec friction_compensation_torque = friction_observer_L1_PD(robot, gravDir, tau_task, motionData, controlData);
         new_tau = tau_task - friction_compensation_torque;
