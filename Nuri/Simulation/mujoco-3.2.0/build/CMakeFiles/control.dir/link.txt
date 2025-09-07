@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcontrol.a CMakeFiles/control.dir/include/Controller.cpp.o
+/usr/bin/ranlib libcontrol.a

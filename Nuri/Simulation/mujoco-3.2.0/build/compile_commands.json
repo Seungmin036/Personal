@@ -1,0 +1,44 @@
+[
+{
+  "directory": "/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/build",
+  "command": "/usr/bin/clang++   -O3 -DNDEBUG -std=gnu++17 -arch arm64 -Wall -o CMakeFiles/lodepng.dir/simulate/lodepng.cpp.o -c /Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/simulate/lodepng.cpp",
+  "file": "/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/simulate/lodepng.cpp",
+  "output": "CMakeFiles/lodepng.dir/simulate/lodepng.cpp.o"
+},
+{
+  "directory": "/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/build",
+  "command": "/usr/bin/clang++  -I/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/simulate -I/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/include -I/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/sample -isystem /opt/homebrew/include -O3 -DNDEBUG -std=gnu++17 -arch arm64 -Wall -o CMakeFiles/libsimulate.dir/simulate/simulate.cc.o -c /Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/simulate/simulate.cc",
+  "file": "/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/simulate/simulate.cc",
+  "output": "CMakeFiles/libsimulate.dir/simulate/simulate.cc.o"
+},
+{
+  "directory": "/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/build",
+  "command": "/usr/bin/clang++  -I/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/simulate -I/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/include -I/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/sample -isystem /opt/homebrew/include -O3 -DNDEBUG -std=gnu++17 -arch arm64 -Wall -o CMakeFiles/libsimulate.dir/simulate/glfw_adapter.cc.o -c /Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/simulate/glfw_adapter.cc",
+  "file": "/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/simulate/glfw_adapter.cc",
+  "output": "CMakeFiles/libsimulate.dir/simulate/glfw_adapter.cc.o"
+},
+{
+  "directory": "/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/build",
+  "command": "/usr/bin/clang++  -I/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/simulate -I/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/include -I/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/sample -isystem /opt/homebrew/include -O3 -DNDEBUG -std=gnu++17 -arch arm64 -Wall -o CMakeFiles/libsimulate.dir/simulate/platform_ui_adapter.cc.o -c /Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/simulate/platform_ui_adapter.cc",
+  "file": "/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/simulate/platform_ui_adapter.cc",
+  "output": "CMakeFiles/libsimulate.dir/simulate/platform_ui_adapter.cc.o"
+},
+{
+  "directory": "/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/build",
+  "command": "/usr/bin/clang++  -I/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/simulate -I/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/include -I/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/sample -isystem /opt/homebrew/include -O3 -DNDEBUG -std=gnu++17 -arch arm64 -Wall -o CMakeFiles/libsimulate.dir/simulate/glfw_dispatch.cc.o -c /Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/simulate/glfw_dispatch.cc",
+  "file": "/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/simulate/glfw_dispatch.cc",
+  "output": "CMakeFiles/libsimulate.dir/simulate/glfw_dispatch.cc.o"
+},
+{
+  "directory": "/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/build",
+  "command": "/usr/bin/clang++ -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DBOOST_MPL_LIMIT_VECTOR_SIZE=30 -DCOAL_BACKWARD_COMPATIBILITY_WITH_HPP_FCL -DCOAL_HAS_OCTOMAP -DCOAL_HAVE_OCTOMAP -DOCTOMAP_MAJOR_VERSION=1 -DOCTOMAP_MINOR_VERSION=10 -DOCTOMAP_PATCH_VERSION=0 -DPINOCCHIO_ENABLE_TEMPLATE_INSTANTIATION -DPINOCCHIO_WITH_HPP_FCL -DPINOCCHIO_WITH_URDFDOM -isystem /opt/homebrew/include/eigen3 -isystem /opt/homebrew/include -isystem /opt/homebrew/include/urdfdom -isystem /opt/homebrew/include/urdfdom_headers -O3 -DNDEBUG -std=gnu++17 -arch arm64 -Wall -o CMakeFiles/control.dir/include/Controller.cpp.o -c /Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/include/Controller.cpp",
+  "file": "/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/include/Controller.cpp",
+  "output": "CMakeFiles/control.dir/include/Controller.cpp.o"
+},
+{
+  "directory": "/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/build",
+  "command": "/usr/bin/clang++ -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DBOOST_MPL_LIMIT_VECTOR_SIZE=30 -DCOAL_BACKWARD_COMPATIBILITY_WITH_HPP_FCL -DCOAL_HAS_OCTOMAP -DCOAL_HAVE_OCTOMAP -DOCTOMAP_MAJOR_VERSION=1 -DOCTOMAP_MINOR_VERSION=10 -DOCTOMAP_PATCH_VERSION=0 -DPINOCCHIO_ENABLE_TEMPLATE_INSTANTIATION -DPINOCCHIO_WITH_HPP_FCL -DPINOCCHIO_WITH_URDFDOM -I/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/simulate -I/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/include -I/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/sample -isystem /opt/homebrew/include -isystem /opt/homebrew/include/eigen3 -isystem /opt/homebrew/include/urdfdom -isystem /opt/homebrew/include/urdfdom_headers -O3 -DNDEBUG -std=gnu++17 -arch arm64 -Wall -o CMakeFiles/mujoco-3.2.0.dir/simulate/main.cc.o -c /Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/simulate/main.cc",
+  "file": "/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/simulate/main.cc",
+  "output": "CMakeFiles/mujoco-3.2.0.dir/simulate/main.cc.o"
+}
+]

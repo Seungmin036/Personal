@@ -273,7 +273,7 @@ void PhysicsLoop(mj::Simulate& sim) {
   std::chrono::time_point<mj::Simulate::Clock> syncCPU;
   mjtNum syncSim = 0;
 
-  std::string urdf_path = "/home/jaehun/mujoco-3.2.0/model/nuri_4s/nuri_4s.urdf";
+  std::string urdf_path = "/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/model/nuri_4s/nuri_4s.urdf";
   pinocchio::Model pinocchio_model;
   pinocchio::urdf::buildModel(urdf_path, pinocchio_model);
   pinocchio_model.gravity.linear(pinocchio::Model::gravity981);
@@ -537,7 +537,7 @@ int main(int argc, char** argv) {
       &cam, &opt, &pert, /* is_passive = */ false
   );
 
-  const char* filename = "/home/jaehun/mujoco-3.2.0/model/nuri_4s/nuri_4s.xml";
+  const char* filename = "/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/model/nuri_4s/nuri_4s.xml";
   if (argc >  1) {
     filename = argv[1];
   }

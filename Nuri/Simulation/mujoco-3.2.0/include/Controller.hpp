@@ -11,7 +11,7 @@
 #include <pinocchio/algorithm/joint-configuration.hpp>
 #include <eigen3/Eigen/Dense>
 
-#include <mujoco/mujoco.h>
+#include "mujoco/mujoco.h"
 #include <iostream>
 
 class Controller

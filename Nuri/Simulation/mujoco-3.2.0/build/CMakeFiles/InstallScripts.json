@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

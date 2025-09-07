@@ -9,19 +9,15 @@ Controller::Controller(pinocchio::Model pinocchio_model)
     //     std::cout<< model_.frames[i] <<std::endl;
     // }
 
-    Kp_.resize(6,6);
-    Kp_.setZero();
+    Kp_.resize(6,6); Kp_.setZero();
     Kp_.diagonal() << 500, 500, 500, 300, 100, 30;
-    Kd_.resize(6,6);
-    Kd_.setZero();
+    Kd_.resize(6,6); Kd_.setZero();
     Kd_.diagonal() << 5, 5, 5, 2, 2, 1;
-    Kp_task_.resize(6,6);
-    Kp_task_.setZero();
-    Kp_task_.diagonal() << 0, 0, 0, 2500, 2500, 2500;
-    Kd_task_.resize(6,6);
-    Kd_task_.setZero();
-    Kd_task_.diagonal() << 0, 0, 0, 300, 300, 300;
 
+    Kp_task_.resize(6,6); Kp_task_.setZero();
+    Kp_task_.diagonal() << 0, 0, 0, 2500, 2500, 2500;
+    Kd_task_.resize(6,6); Kd_task_.setZero();
+    Kd_task_.diagonal() << 0, 0, 0, 300, 300, 300;ㄴ
 }
 
 Eigen::VectorXd Controller::computeGravityCompensation(const mjModel* m, mjData* d)

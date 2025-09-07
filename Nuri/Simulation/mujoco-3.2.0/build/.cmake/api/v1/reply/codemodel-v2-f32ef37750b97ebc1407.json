@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "mujoco-3.2.0",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "control::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-control-Release-0ad10ef25a763880e148.json",
+					"name" : "control",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "libsimulate::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-libsimulate-Release-66c9a793cd5698e1a532.json",
+					"name" : "libsimulate",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lodepng::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lodepng-Release-b6eca045bd646d75fe51.json",
+					"name" : "lodepng",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mujoco-3.2.0::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mujoco-3.2.0-Release-5c59e49dce0ca75a1691.json",
+					"name" : "mujoco-3.2.0",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0/build",
+		"source" : "/Users/shinseungmin/Documents/Github/Nuri/Simulation/mujoco-3.2.0"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}
