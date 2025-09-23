@@ -60,6 +60,7 @@
                   <geom type="capsule" fromto="0 0 0 0.2 0 0" size="0.01" rgba="1 0 0 1" contype="0" conaffinity="0"/>
                   <geom type="capsule" fromto="0 0 0 0 0.2 0" size="0.01" rgba="0 1 0 1" contype="0" conaffinity="0"/>
                   <geom type="capsule" fromto="0 0 0 0 0 0.2" size="0.01" rgba="0 0 1 1" contype="0" conaffinity="0"/>
+                  <site name="end_effector" pos="0 0 0.05" size="0.01" rgba="1 0 0 1"/>
                 </body>
               </body>
             </body>
