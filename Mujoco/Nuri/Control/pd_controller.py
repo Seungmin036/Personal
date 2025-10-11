@@ -14,7 +14,7 @@ def build_selector_S(model):
             S[i, dof] = 1.0
     return S  # (nu, nv)
 
-# -------------------- 동역학 유틸 --------------------
+# -------------------- 중력보상 --------------------
 class Gravity:
     def __init__(self, model, data):
         self.model = model
@@ -70,7 +70,7 @@ class Gravity:
             tau = M @ qddot_des + CG
         return tau  # (nv,)
 
-# -------------------- PD 컨트롤러 --------------------
+# -------------------- PD controller --------------------
 class PDController:
     def __init__(self, model, data, Kp, Kd, target_final=None,
                  use_gravity=True, use_coriolis=False, clip_to_ctrlrange=True):
