@@ -222,6 +222,7 @@
                       <body name="left_finger" pos="0 0 0.0584">
                         <inertial mass="0.015" pos="0 0 0" diaginertia="2.375e-6 2.375e-6 7.5e-7"/>
                         <joint name="finger_joint1" class="finger" damping="10"/>
+                        <site name="left_fingertip_site" pos="0 0.01 0.05" size="0.005"/>
                         <geom mesh="finger_0" material="off_white" class="visual"/>
                         <geom mesh="finger_1" material="black" class="visual"/>
                         <geom mesh="finger_0" class="collision"/>
@@ -233,6 +234,7 @@
                       <body name="right_finger" pos="0 0 0.0584" quat="0 0 0 1">
                         <inertial mass="0.015" pos="0 0 0" diaginertia="2.375e-6 2.375e-6 7.5e-7"/>
                         <joint name="finger_joint2" class="finger" damping="10"/>
+                        <site name="right_fingertip_site" pos="0 -0.01 0.05" size="0.005"/> 
                         <geom mesh="finger_0" material="off_white" class="visual"/>
                         <geom mesh="finger_1" material="black" class="visual"/>
                         <geom mesh="finger_0" class="collision"/>
@@ -275,7 +277,16 @@
      <general class="panda" name="actuator9" joint="finger_joint2"
      ctrlrange="0 0.04" gainprm="350 0 0" biasprm="0 -350 -10" forcerange="-200 200"/>
   </actuator>
-
+    <!-- ... </actuator> 바로 다음 줄에 추가 ... -->
+    <!-- ... </actuator> 바로 다음 줄에 추가 ... -->
+  <sensor>
+    <!-- 엔드 이펙터의 위치(x,y,z)를 추적하는 센서 -->
+    <framepos name="eef_pos_sensor" objtype="site" objname="gripper"/>
+    <!-- 왼쪽 손가락에 가해지는 힘을 감지하는 터치 센서 -->
+    <touch name="left_finger_touch" site="left_fingertip_site"/>
+    <!-- 오른쪽 손가락에 가해지는 힘을 감지하는 터치 센서 -->
+    <touch name="right_finger_touch" site="right_fingertip_site"/>
+  </sensor>
   <contact>
     <exclude body1="link0" body2="link1"/>
   </contact>
