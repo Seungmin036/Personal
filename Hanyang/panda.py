@@ -127,4 +127,3 @@ except KeyboardInterrupt:
 finally:
     if viewer.is_running():
         viewer.close()
-

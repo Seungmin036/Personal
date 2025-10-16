@@ -15,7 +15,7 @@
     <body name="nuri_4s_link0" pos="0 0 0" quat="1 0 0 0">
       <inertial pos="-0.0047088 0.0013609 0.0700112" mass="3.795" fullinertia="0.0245374 0.0298651 0.0304886 -0.0000807 0.0008462 -0.0001636"/>
       <geom name="nuri_4s_link0_visual" type="mesh" rgba="1 1 1 1" mesh="Nuri4s_0"/>
-      <geom type="capsule" fromto="0 0 0 0.2 0 0" size="0.01" rgba="1 0 0 1" contype="0" conaffinity="0"/>
+      <geom type="capsule" fromto="0 0 0 0.2 0 0" size="0.01" rgba="1 0 0 1" contype="0" conaffinity="0"/>ㅇ
       <geom type="capsule" fromto="0 0 0 0 0.2 0" size="0.01" rgba="0 1 0 1" contype="0" conaffinity="0"/>
       <geom type="capsule" fromto="0 0 0 0 0 0.2" size="0.01" rgba="0 0 1 1" contype="0" conaffinity="0"/>
       <body name="nuri_4s_link1" pos="0 0 0.09" quat="1 0 0 0" >
