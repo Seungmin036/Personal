@@ -2,7 +2,7 @@
 
 ## (2025-10-14) This repository's update is working in progress. Previous version is deprecated.
 
-![](img/pickandplace.mov)
+![](img/pickandplace.gif)
 
 Very simple MuJoCo Pick and Place task using Panda robot
 
